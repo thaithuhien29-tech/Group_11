@@ -14,19 +14,19 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Mini Jira là hệ thống quản lý công việc mô phỏng Jira, được xây dựng bằng **Java** nhằm minh họa việc áp dụng các cấu trúc dữ liệu trong thực tế.
 
 🔎 Dự án tập trung vào:
 
-- 🔗 Linked List (Task Board)
-- 🌳 Binary Search Tree (Search Task by ID)
-- 🔄 Directed Graph (Task Dependencies & Cycle Detection)
+-  Linked List (Task Board)
+-  Binary Search Tree (Search Task by ID)
+-  Directed Graph (Task Dependencies & Cycle Detection)
 
 ---
 
-## 🚀 Features (DSA Modules)
+##  Features (DSA Modules)
 
 | Module | Data Structure | Chức năng |
 |--------|---------------|------------|
@@ -37,7 +37,7 @@ Mini Jira là hệ thống quản lý công việc mô phỏng Jira, được x�
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 src/main/java/com/minijira/
 ├── app/
 │ └── Main.java # Entry point
@@ -51,7 +51,7 @@ src/main/java/com/minijira/
 
 ---
 
-## 🧠 Technical Details (DSA)
+## Technical Details (DSA)
 
 | Structure | Complexity | Description |
 |------------|------------|-------------|
@@ -61,7 +61,7 @@ src/main/java/com/minijira/
 
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 | Component | Technology |
 |------------|------------|
@@ -72,15 +72,15 @@ src/main/java/com/minijira/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
-### 1️⃣ Compile
+###  Compile
 
 ```bash
 mvn compile
-2️⃣ Run Application
+ Run Application
 mvn exec:java -Dexec.mainClass="com.minijira.app.Main"
-🔄 Main Workflow
+ Main Workflow
 Step	Action	Related Structure
 1	Create Task	Linked List + BST + Graph
 2	Move Task	Linked List
