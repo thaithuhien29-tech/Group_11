@@ -1,140 +1,92 @@
-![Java](https://img.shields.io/badge/Java-17-blue)
-![Maven](https://img.shields.io/badge/Maven-3.x-orange)
-![DSA](https://img.shields.io/badge/Data%20Structure-Linked%20List%20%7C%20BST%20%7C%20Graph-green)
-![Course](https://img.shields.io/badge/CSD201-Data%20Structures-purple)
-# Mini Jira (Project Management System)
+<p align="center">
+  <h1 align="center">📋 Mini Jira - Task Management System</h1>
+  <p align="center">
+    Java Application demonstrating Linked List, BST & Directed Graph (DFS)
+  </p>
+</p>
 
-Ứng dụng quản lý công việc (Task Management) xây dựng bằng Java, minh họa các cấu trúc dữ liệu: Linked List, Binary Search Tree (BST) và Directed Graph.
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-21-blue?logo=java" />
+  <img src="https://img.shields.io/badge/Maven-3.x-orange?logo=apachemaven" />
+  <img src="https://img.shields.io/badge/DSA-LinkedList%20%7C%20BST%20%7C%20Graph-green" />
+  <img src="https://img.shields.io/badge/Status-Completed-success" />
+</p>
 
-Mô tả đề tài
+---
 
-Mini Jira mô phỏng hệ thống quản lý công việc với:
+## 📌 Overview
 
-Bảng công việc (To Do / Doing / Done)
+Mini Jira là hệ thống quản lý công việc mô phỏng Jira, được xây dựng bằng **Java** nhằm minh họa việc áp dụng các cấu trúc dữ liệu trong thực tế.
 
-Tra cứu Task nhanh theo ID
+🔎 Dự án tập trung vào:
 
-Quản lý phụ thuộc giữa các Task
+- 🔗 Linked List (Task Board)
+- 🌳 Binary Search Tree (Search Task by ID)
+- 🔄 Directed Graph (Task Dependencies & Cycle Detection)
 
-Tính năng (DSA)
-Module	Cấu trúc dữ liệu	Chức năng
-Task Board	Linked List	Mỗi cột (To Do, Doing, Done) là một Linked List
-Task Search	BST	Tìm kiếm Task theo ID nhanh
-Task Dependency	Directed Graph	Quản lý phụ thuộc Task A → Task B
-Yêu cầu hệ thống
+---
 
-JDK 17 trở lên
+## 🚀 Features (DSA Modules)
 
-Maven 3.x
+| Module | Data Structure | Chức năng |
+|--------|---------------|------------|
+| **Task Board** | Linked List | Quản lý ToDo / Doing / Done |
+| **Task Search** | BST | Tìm kiếm Task theo ID |
+| **Task Dependency** | Directed Graph | Quản lý phụ thuộc giữa các Task |
+| **Cycle Detection** | DFS | Kiểm tra chu trình phụ thuộc |
 
-Cách chạy
-1. Build project
-mvn compile
-2. Chạy chương trình
-mvn exec:java -Dexec.mainClass="com.minijira.app.Main"
+---
 
-(Thay bằng đúng main class của bạn nếu khác)
-
-Hướng dẫn Demo
-1️⃣ Task Board (Linked List)
-
-Thêm Task mới vào cột To Do
-
-Di chuyển Task giữa các cột:
-
-To Do → Doing
-
-Doing → Done
-
-Khi di chuyển:
-
-Cắt node khỏi Linked List cũ
-
-Thêm node vào Linked List mới
-
-Hiển thị theo dạng:
-
-Head → Task1 → Task2 → Task3 → Tail
-2️⃣ Tra cứu Task (BST)
-
-Thêm Task vào hệ thống (tự insert vào BST)
-
-Tìm kiếm theo ID (ví dụ: T001)
-
-Xóa Task khỏi hệ thống
-
-Độ phức tạp:
-
-Search: O(log n)
-
-Insert: O(log n)
-
-Delete: O(log n)
-
-3️⃣ Phụ thuộc Task (Graph)
-
-Thiết lập quan hệ phụ thuộc:
-
-Task A phải hoàn thành trước Task B
-
-Biểu diễn bằng đồ thị có hướng
-
-Kiểm tra:
-
-Task có thể thực hiện chưa?
-
-Có tồn tại chu trình (cycle) không?
-
-Cấu trúc project
+## 🏗️ Project Structure
 src/main/java/com/minijira/
 ├── app/
-│   └── Main.java                # Entry point
+│ └── Main.java # Entry point
 ├── entities/
-│   ├── Task.java
-│   └── Project.java
+│ ├── Task.java
+│ └── Project.java
 └── structures/
-    ├── MyLinkedList.java        # Task Board (ToDo/Doing/Done)
-    ├── MyBST.java               # Search Task by ID
-    └── MyGraph.java             # Task Dependency (Directed Graph)
-Chi tiết kỹ thuật (DSA)
-Cấu trúc	Độ phức tạp	Mô tả
-Linked List	Insert O(1), Delete O(n)	Mỗi cột là một danh sách liên kết
-BST	Search O(log n)	Tìm kiếm Task theo ID
-Directed Graph	DFS O(V+E)	Kiểm tra phụ thuộc và chu trình
-Công nghệ sử dụng
+├── MyLinkedList.java # Task Board
+├── MyBST.java # Search by ID
+└── MyGraph.java # Directed Graph + DFS
 
-Ngôn ngữ: Java
+---
 
-Build tool: Maven
+## 🧠 Technical Details (DSA)
 
-Mô hình: OOP
+| Structure | Complexity | Description |
+|------------|------------|-------------|
+| **MyLinkedList** | Insert O(1), Delete O(n) | Mỗi cột (ToDo/Doing/Done) là một linked list |
+| **MyBST** | Search O(log n) | Tìm kiếm Task theo ID |
+| **MyGraph** | DFS O(V+E) | Kiểm tra phụ thuộc và chu trình |
 
-Cấu trúc dữ liệu: Linked List, BST, Graph
+---
 
-Luồng xử lý chính
+## ⚙️ Technologies Used
 
-Tạo Task → Insert vào:
+| Component | Technology |
+|------------|------------|
+| Language | Java 21 |
+| Build Tool | Maven |
+| Architecture | OOP |
+| Data Structures | Linked List, BST, Graph |
 
-Linked List (To Do)
+---
 
-BST (Search)
+## ▶️ How to Run
 
-Graph (Node mới)
+### 1️⃣ Compile
 
-Di chuyển Task:
+```bash
+mvn compile
+2️⃣ Run Application
+mvn exec:java -Dexec.mainClass="com.minijira.app.Main"
+🔄 Main Workflow
+Step	Action	Related Structure
+1	Create Task	Linked List + BST + Graph
+2	Move Task	Linked List
+3	Search Task	BST
+4	Add Dependency	Graph
+5	Check Cycle	Graph (DFS)
+Dự án thực hiện cho môn:
 
-Xóa node khỏi Linked List cũ
-
-Thêm vào Linked List mới
-
-Thêm phụ thuộc:
-
-Thêm cạnh A → B trong Graph
-
-Kiểm tra cycle (nếu có)
-
-Chạy test
-mvn test
-Môn học
-
-Dự án thực hiện cho môn CSD201 – Cấu trúc dữ liệu và giải thuật.
+CSD201 – Data Structures and Algorithms
