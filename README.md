@@ -1,4 +1,8 @@
-Mini Jira (Project Management System)
+![Java](https://img.shields.io/badge/Java-17-blue)
+![Maven](https://img.shields.io/badge/Maven-3.x-orange)
+![DSA](https://img.shields.io/badge/Data%20Structure-Linked%20List%20%7C%20BST%20%7C%20Graph-green)
+![Course](https://img.shields.io/badge/CSD201-Data%20Structures-purple)
+# Mini Jira (Project Management System)
 
 Ứng dụng quản lý công việc (Task Management) xây dựng bằng Java, minh họa các cấu trúc dữ liệu: Linked List, Binary Search Tree (BST) và Directed Graph.
 
