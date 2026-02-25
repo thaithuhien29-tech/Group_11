@@ -43,6 +43,7 @@ MiniJira_GroupXX/
 │ └── structures/
 │ ├── MyLinkedListTest.java
 │ └── MyBSTTest.java
+
 ✅ SKELETON CODE (TUẦN 1–3)
 1️⃣ app/ConsoleApp.java
 package com.minijira.app;
@@ -65,6 +66,7 @@ public class ConsoleApp {
         System.out.println("System initialized successfully.");
     }
 }
+
 2️⃣ app/WebServer.java
 package com.minijira.app;
 
@@ -74,6 +76,7 @@ public class WebServer {
         System.out.println("Web Server starting...");
     }
 }
+
 3️⃣ entities/Task.java
 package com.minijira.entities;
 
@@ -99,6 +102,7 @@ public class Task {
         return status;
     }
 }
+
 4️⃣ entities/Project.java
 package com.minijira.entities;
 
@@ -113,6 +117,7 @@ public class Project {
     }
 }
 🔥 QUAN TRỌNG NHẤT – STRUCTURES
+
 5️⃣ Node.java
 package com.minijira.structures;
 
@@ -126,6 +131,7 @@ public class Node<T> {
         this.next = null;
     }
 }
+
 6️⃣ MyLinkedList.java (Task Board - Tuần 1)
 package com.minijira.structures;
 
@@ -145,6 +151,7 @@ public class MyLinkedList<T> {
         // TODO: implement display
     }
 }
+
 7️⃣ MyBST.java (Search Task - Tuần 2)
 package com.minijira.structures;
 
@@ -174,6 +181,7 @@ public class MyBST {
         // TODO
     }
 }
+
 8️⃣ MyGraph.java (Dependency - Tuần 3)
 package com.minijira.structures;
 
@@ -187,6 +195,7 @@ public class MyGraph {
         return false;
     }
 }
+
 ✅ UTILS
 FileLoader.java
 package com.minijira.utils;
@@ -206,6 +215,7 @@ public class InputValidator {
         return id != null && !id.isEmpty();
     }
 }
+
 ✅ UNIT TEST (Skeleton)
 MyLinkedListTest.java
 package com.minijira.structures;
